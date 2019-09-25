@@ -1,0 +1,35 @@
+/* style.css */
+h1 {
+	color:brown;
+	margin: 0;
+}
+h2 {
+	margin:0;
+	text-align: center;
+	border: dashed 5px blue;
+}
+
+p {
+	font-family: "Old English";
+	background-color: lightpink;
+}
+body 
+{
+	background-color:lightblue;
+	color: hotpink;
+}
+
+/* page 1*/
+.header-title {
+	font-size: 100px
+	text-align; center;
+}
+
+.dog {
+	position: relative;
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+}
+
+
