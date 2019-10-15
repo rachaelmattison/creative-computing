@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #a6007b; 
+}
+.green {
+	width: 25vmin;
+	height: 25vmin;
+	background-color: ##ffc2c7;
+	animation: skew 4s infinite alternate;
+}
+.yellow {
+	width: 50vmin;
+	height: 50vmin;
+	background-color: #ff3399;
+	animation: spin 5s infinite linear;
+}
+
+.wrapper {
+	animation: slide 1s infinite alternate;
+}
+.pink {
+	width: 50vmin;
+	height: 50vmin;
+	background-color: #e371c1;
+	animation: slide 5s infinite linear;
+}
+.orange {
+	width: 180vmin;
+	height: 22vmin;
+	background-color: #f3c0fc;
+	animation: skew 10s infinite linear;
+}
+.lightpink {
+	width: 22vmin;
+	height: 22vmin;
+	background-color: #ffe0f7;
+	animation: slowslide 11s infinite linear;
+
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes slide {
+	to {
+		transform: translate(400px, 0px);
+	}
+}
+@keyframes skew {
+	to {
+		transform: skew(360deg);
+	}
+}
+@keyframes slowslide {
+	0% {
+		transform: initial;
+	}
+	50% {
+		transform: initial;
+	}
+	75% {
+		transform: translate(50vw, 0);
+	}
+	100% {
+		transform: initial;
+	}
+
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="yellow">
+		<div class="pink">
+			<div class="green">
+<div class="orange">
+	<div class="lightpink">
+
+
+</div>
+
+
+</body>
+</html>
