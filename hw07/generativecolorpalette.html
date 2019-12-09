@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	html, body {
+		margin: 0;
+		height: 100%;
+	}
+	body { display: flex; }
+	div { flex: 1; }
+
+</style>
+<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+//this creates a div, with a random background color, appends it to the body
+var counter = 0;
+while (counter < 50) {
+	var color = Math.floor( Math.random() * 360);
+var div = document.createElement("div");
+div.style.backgroundColor = "hsl(" + color + ", 100%, 50%)";
+document.body.appendChild(div);
+counter = counter + 1;
+}
+
+
+// how do i link the div with color? to make the div randomly generate a color 
+
+
+
+
+</script>
+
+</body>
+</html>
