@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.california {
+	justify-content: center;
+}
+
+
+</style>
+<title></title>
+</head>
+<body>
+
+<img id = "gif1" src = "tvgifs/california.gif">
+
+
+<script type="text/javascript">
+// do the variables need to be inside of the function? 
+// do i need to create seperate functions for 'on key press UP' and 'on key press DOWN?'
+//does each channel(gif) need to be its own variable? 
+// i am not using math.random in this? i want (the computer) to control the flow of the channels 
+// every time i change the src in the <img it doesn't show the gifs ? 
+
+	var images = [
+"tvgifs/california.gif",
+"tvgifs/charismatic.gif",
+"tvgifs/disco.gif",
+"tvgifs/hallucinogen.gif",
+"tvgifs/newyork.gif",
+"tvgifs/openingpage.gif",
+"tvgifs/orange.gif",
+"tvgifs/romantic.gif",
+"tvgifs/strawberry.gif"
+];
+
+// what code do i call the down arrow key in the 'event' handler 
+// how do i indicate what channel im on based off of the var images??? 
+
+	var channel = 0;
+document.onkeypress = function(){ 
+	console.log("channel change"); 
+	document.getElementById("gif1").src = images[channel];
+	channel = channel + 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
