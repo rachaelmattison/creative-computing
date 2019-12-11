@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+	html, body {
+		background-color: red;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+</head>
+<body>
+
+<img id = "dice1" src= "hw06/dicepics">
+<img id= "dice2" src= "hw06/dicepics">
+<script type="text/javascript">
+
+var dicepics = [
+"dicepics/1.svg",
+"dicepics/2.svg",
+"dicepics/3.svg",
+"dicepics/4.svg",
+"dicepics/5.svg",
+"dicepics/6.svg"
+];
+
+var random = Math.floor(Math.random() * 6);
+
+console.log(random);
+
+// set an image's src in javascript
+document.getElementById("dice1").src = dicepics[random];
+document.getElementById("dice2").src = dicepics[random];
+
+// how do you pull one element out of an array
+// square brackets with a number inside
+// what are the choices of random numbers we can use?
+// 0 1 2 3 4 5
+// dicepics[random]
+
+
+
+
+</script>
+</body>
+</html>
